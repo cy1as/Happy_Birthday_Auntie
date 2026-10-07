@@ -1,0 +1,274 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff5f8;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+    background:
+        radial-gradient(circle at 20% 20%, #ffd6e7, transparent 30%),
+        radial-gradient(circle at 80% 80%, #dcd6ff, transparent 30%),
+        linear-gradient(135deg, #fff5f8, #f3efff);
+}
+
+.hero-content {
+    max-width: 700px;
+    animation: fadeUp 1s ease;
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #777;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.7;
+    color: #666;
+    font-size: 17px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: #333;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* BIRTHDAY */
+
+.birthday {
+    min-height: 100vh;
+    padding: 100px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+}
+
+.birthday-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 60px 30px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.75);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.08);
+
+    backdrop-filter: blur(15px);
+
+    animation: fadeUp 1s ease;
+}
+
+.emoji {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.birthday-card h2 {
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #888;
+}
+
+.birthday-card h1 {
+    font-size: clamp(40px, 8vw, 70px);
+    margin: 15px 0;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background: #333;
+    margin: 25px auto;
+}
+
+.handsome {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.handsome strong {
+    display: block;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.agree-btn {
+    background: #ff6f91;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* MESSAGE */
+
+.message {
+    min-height: 100vh;
+    padding: 100px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 10% 90%, #ffe1eb, transparent 35%),
+        radial-gradient(circle at 90% 10%, #e5e0ff, transparent 35%),
+        #fafafa;
+}
+
+.message-box {
+    max-width: 700px;
+    padding: 55px 40px;
+
+    background: rgba(255,255,255,0.8);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    backdrop-filter: blur(15px);
+}
+
+.heart {
+    font-size: 40px;
+}
+
+.message-box h2 {
+    font-size: 35px;
+    margin: 20px 0 35px;
+}
+
+.message-box p {
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 17px;
+}
+
+.message-box h3 {
+    margin-top: 35px;
+    font-size: 25px;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: #777;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #222;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .birthday-card {
+        padding: 45px 20px;
+    }
+
+    .birthday-card h1 {
+        font-size: 42px;
+    }
+
+    .message-box {
+        padding: 40px 25px;
+    }
+
+    .message-box h2 {
+        font-size: 28px;
+    }
+
+}
+
